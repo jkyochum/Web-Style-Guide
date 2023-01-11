@@ -18,3 +18,19 @@ $gray80: #ccc;
 
 // Media Query Breakpoint
 $break: 768px;
+
+// Map of background-color
+$backgrounds: (
+    1: $purple-magenta,
+    2: $faux-coral,
+    3: $light-magenta,
+    4: $turquoise-blue,
+    5: $rinsed-green,
+    6: $dark-aqua,
+    7: $worn-pink,
+    8: $light-orange-pink,
+    9: $cranberry-red,
+    10: $light-lime-green,
+    11: $malibu-blue,
+    12: $blue-green,
+);
