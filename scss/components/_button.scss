@@ -1,5 +1,13 @@
 .btn {
     @include button;
+
+    @media(min-width: $break) {
+        padding: 10px 30px;
+
+        &+.btn {
+            margin-left: 10px;
+        }
+    }
 }
 
 @each $background,
