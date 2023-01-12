@@ -2,6 +2,10 @@
     padding-left: 0;
     flex-basis: 100%;
     @include flex($disp: flex, $dir: column);
+
+    @media(min-width: $break) {
+        @include flex($dir: row, $just: flex-end, $align: center);
+    }
 }
 
 .nav-link {
@@ -13,6 +17,10 @@
     transition:
         background-color .2s ease-in-out,
         color .2s ease-in-out;
+
+    @media(min-width: $break) {
+        flex-basis: 100px;
+    }
 }
 
 .nav-link:hover {
