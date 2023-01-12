@@ -34,3 +34,12 @@ $col-backgrounds: (
     11: $malibu-blue,
     12: $blue-green,
 );
+
+// Map of button colors
+$btn-backgrounds: (
+    'default': $cyan,
+    'error': $cranberry-red,
+    'info': $purple-magenta,
+    'success': $light-lime-green,
+    'warning': $faux-coral,
+);
