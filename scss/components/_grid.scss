@@ -1,5 +1,10 @@
 .container {
     padding: 0 10px;
+
+    @media(min-width: $break) {
+        max-width: 1400px;
+        @include center;
+    }
 }
 
 .row {
@@ -20,6 +25,12 @@
 $color in $col-backgrounds {
     .theme.col-#{$background} {
         background-color: $color;
+    }
+}
+
+.centered {
+    @media(min-width: $break) {
+        @include center;
     }
 }
 
