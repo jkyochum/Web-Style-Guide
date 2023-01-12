@@ -8,9 +8,12 @@
 }
 
 .row {
-    display: flex;
-    flex-direction: column;
+    @include flex($disp: flex, $dir: column);
     padding: 1em 10px;
+
+    @media(min-width: $break) {
+        @include flex($dir: row);
+    }
 }
 
 [class^=col] {
@@ -19,6 +22,15 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+
+    @media(min-width: $break) {
+        @include flex($disp: flex, $just: center, $align: center);
+        margin-top: 0;
+
+        &+[class^=col] {
+            margin-left: 10px;
+        }
+    }
 }
 
 @each $background,

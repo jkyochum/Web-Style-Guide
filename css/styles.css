@@ -448,6 +448,11 @@ template {
   flex-direction: column;
   padding: 1em 10px;
 }
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
 
 [class^=col] {
   margin-top: 10px;
@@ -455,6 +460,17 @@ template {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
 }
 
 .theme.col-1 {
