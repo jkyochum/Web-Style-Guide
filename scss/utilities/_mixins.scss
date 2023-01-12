@@ -31,3 +31,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+// For flexbox layout
+@mixin flex($disp: null,
+    $just: null,
+    $align: null,
+    $dir: null,
+) {
+    display: $disp;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $dir;
+}
