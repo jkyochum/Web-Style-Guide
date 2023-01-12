@@ -1,3 +1,4 @@
+// Create default button style
 @mixin button {
     margin-top: 15px;
     width: 100%;
@@ -8,6 +9,7 @@
     border-radius: 5px;
 }
 
+// Create default image style
 @mixin img($disp: block,
     $margin-l: auto,
     $margin-r: auto,
