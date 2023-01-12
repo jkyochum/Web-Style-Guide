@@ -17,7 +17,7 @@
 }
 
 @each $background,
-$color in $backgrounds {
+$color in $col-backgrounds {
     .theme.col-#{$background} {
         background-color: $color;
     }
