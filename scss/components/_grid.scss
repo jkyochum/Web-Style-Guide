@@ -33,9 +33,17 @@
     }
 }
 
-.col {}
+.col {
+    @media(min-width: $break) {
 
-
+        @each $basis,
+        $percent in $col-basis {
+            &-#{$basis} {
+                flex-basis: $percent;
+            }
+        }
+    }
+}
 
 @each $background,
 $color in $col-backgrounds {
@@ -43,8 +51,6 @@ $color in $col-backgrounds {
         background-color: $color;
     }
 }
-
-
 
 .centered {
     @media(min-width: $break) {
