@@ -33,24 +33,7 @@
     }
 }
 
-.col {
-
-
-
-    @for $i from 1 through length($col-list) {
-        &-#{$i} {
-
-            flex-basis: func-basis();
-        }
-    }
-
-    // @each $basis in $col-list {
-    //     &-#{$i} {
-    //         flex-basis: $basis;
-    //     }
-
-    // }
-}
+.col {}
 
 
 
