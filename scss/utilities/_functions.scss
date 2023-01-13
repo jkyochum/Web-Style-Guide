@@ -1,25 +1,23 @@
-@function func-basis($bas) {
+@function func-basis() {
+
     @for $i from 1 through 12 {
         @if($i ==2) {
-            $bas: $bas +.01%;
+            $basis: $basis +.01%;
         }
 
         @else if ($i ==5) {
-            $bas: $bas +.01%;
+            $basis: $basis +.01%;
         }
 
         @else if ($i ==8) {
-            $bas: $bas +.01%;
+            $basis: $basis +.01%;
         }
 
         @else if ($i ==11) {
-            $bas: $bas +.01%;
+            $basis: $basis +.01%;
         }
 
-        @return calc($basis + 8.33%);
-
-
-
-
+        $col-list: list.append($col-list, calc($basis + 8.33%));
+        @return $col-list;
     }
 }
