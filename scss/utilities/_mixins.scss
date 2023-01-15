@@ -45,6 +45,6 @@
 }
 
 // Transition effect for backgrounds
-@mixin transition {
-    tranition: background-color .2s ease-in-out, color .2s ease-in-out;
+@mixin transition ($back: null, $color: null) {
+    transition: $back .2s ease-in-out, $color .2s ease-in-out;
 }
