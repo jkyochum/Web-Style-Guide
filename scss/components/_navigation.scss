@@ -16,12 +16,12 @@
     width: 100%;
     @include transition($back: background-color, $color: color);
 
+    &:hover {
+        color: $white;
+        background-color: $green-cyan;
+    }
+
     @media(min-width: $break) {
         flex-basis: 100px;
     }
-}
-
-.nav-link:hover {
-    color: $white;
-    background-color: $green-cyan;
 }
