@@ -388,6 +388,41 @@ template {
   text-transform: uppercase;
   border-radius: 5px;
 }
+.btn.default {
+  background-color: #51ddfc;
+}
+.btn.default:hover {
+  background-color: #9cecfd;
+  transition: background-color 0.2s ease-in-out, 0.2s ease-in-out;
+}
+.btn.error {
+  background-color: #e4757a;
+}
+.btn.error:hover {
+  background-color: #f1b5b8;
+  transition: background-color 0.2s ease-in-out, 0.2s ease-in-out;
+}
+.btn.info {
+  background-color: #927bc1;
+}
+.btn.info:hover {
+  background-color: #bdafd9;
+  transition: background-color 0.2s ease-in-out, 0.2s ease-in-out;
+}
+.btn.success {
+  background-color: #63cc82;
+}
+.btn.success:hover {
+  background-color: #9ddfb0;
+  transition: background-color 0.2s ease-in-out, 0.2s ease-in-out;
+}
+.btn.warning {
+  background-color: #fd7856;
+}
+.btn.warning:hover {
+  background-color: #feb4a2;
+  transition: background-color 0.2s ease-in-out, 0.2s ease-in-out;
+}
 @media (min-width: 768px) {
   .btn {
     padding: 10px 30px;
@@ -395,26 +430,6 @@ template {
   .btn + .btn {
     margin-left: 10px;
   }
-}
-
-.default {
-  background-color: #51ddfc;
-}
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
-}
-
-.success {
-  background-color: #63cc82;
-}
-
-.warning {
-  background-color: #fd7856;
 }
 
 .form {
@@ -627,15 +642,14 @@ template {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+.nav-link:hover {
+  color: #fff;
+  background-color: #58e1c1;
+}
 @media (min-width: 768px) {
   .nav-link {
     flex-basis: 100px;
   }
-}
-
-.nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
 }
 
 /*# sourceMappingURL=styles.css.map */

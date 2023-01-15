@@ -1,18 +1,23 @@
 .btn {
     @include button;
 
+    @each $background,
+    $color in $btn-backgrounds {
+        &.#{$background} {
+            background-color: $color;
+
+            &:hover {
+                background-color: lighten($color, 15%);
+                @include transition($back: background-color);
+            }
+        }
+    }
+
     @media(min-width: $break) {
         padding: 10px 30px;
 
         &+.btn {
             margin-left: 10px;
         }
-    }
-}
-
-@each $background,
-$color in $btn-backgrounds {
-    .#{$background} {
-        background-color: $color;
     }
 }
