@@ -275,7 +275,7 @@ a {
   [class^=col]+[class^=col] {
     margin-left: 10px;
   } */
-
+  /* 
   .col-1 {
     flex-basis: 8.33%;
   }
@@ -322,7 +322,7 @@ a {
 
   .col-12 {
     flex-basis: 100%;
-  }
+  } */
 
   /* .nav {
     flex-direction: row;
